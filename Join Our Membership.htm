@@ -1,0 +1,261 @@
+<html>
+    <head>
+        <title>Coffee Master</title>
+        <script src="https://kit.fontawesome.com/843a5a592f.js" crossorigin="anonymous"></script>
+        <style>
+            body{
+                margin:50px;
+                margin-left: 10%;
+                margin-right: 10%;
+                margin-bottom: 5%;
+                font-family: century gothic;
+                background-image: url('a.jpeg');
+                background-size: 100%;
+            }
+            .background{
+                background-color: white;
+                opacity: 0.93;
+                background-size: auto;
+            }
+            .logo{
+                margin: 20px;
+                width: 150px;
+                height: 150px;
+                margin-bottom: 30px;
+            }
+            .center,h1{
+                text-align: center;
+            }
+            nav a{
+                color:black;
+                padding:5px 20px;
+                border:1px solid white;
+                background-color: white;
+                text-decoration: none;
+                border-radius: 15px;
+            }
+            nav a:hover
+            {
+                background-color: black;
+                color:white;
+            }
+            .content{
+                margin: 25px;
+            }
+            #create{
+                width:fit-content;
+                padding: 5px 20px;
+                border:1px solid black;
+            }
+            footer{
+                height: 300px ;
+                margin-top: 10px;
+                padding: 20px;
+                text-align: left;
+                background: #404040;
+                color: white;
+            }
+            .foot{
+                float: left;
+                margin-left: 20px;
+            }
+            
+            .line
+            {
+                margin-left: 100px;
+                border: #B0B0B0 0.5px solid;
+                height: 150px;
+                float: left;
+            }
+            .clear{
+                clear: left;
+            }
+            .icon{
+                margin-left:20px ;
+                letter-spacing: 20px;
+                font-size: 50px;
+            }
+            .icon a{
+                color: white;
+            }
+            .icon a:hover{
+                color: saddlebrown;
+                
+            }
+            label{
+                margin: 10px;
+            }
+            #firstname,#lastname,#date,#address,#postcode,#email,#hp,#psw,#epsw{
+                margin-bottom: 10px;
+                padding: 5px;
+            }
+            form{
+                margin: 50px;
+            }
+
+        </style>
+    </head>
+
+    <body>
+
+        <div class="background">
+            
+                <div class="center">
+                    <a href="ADraft.html"><img src="logo.jpeg" alt="Coffee Master Logo" class="logo"></a>
+                    <nav>
+                        <a href="menu.htm">Menu</a> &nbsp;&nbsp;
+                        <a href="coffee.htm">Coffee</a> &nbsp;&nbsp;
+                        <a href="membership.htm">Membership</a> &nbsp;&nbsp;
+                        <a href="aboutus.htm">About Us</a> &nbsp;&nbsp;
+                        <a href="workshop.htm">Workshop</a>
+                    </nav>
+                    <br/><hr/>
+                </div>
+
+
+
+            <div class="content">
+                <h3><u>COFFEE MASTER >> Membership >> Crete An Account</u></h3>
+            
+                <form name="membership" id="membership" onsubmit="return check()" action="workshop.htm">
+                    <fieldset>
+
+                        <legend>Personal Information</legend>
+                        <label for="firstname">
+                        First Name: <br/>
+                        <input type="text" id="firstname" name="first" size="40"/>
+                        </label>
+                        <br/>
+                        <label for="lastname">
+                        Last Name: <br/>
+                        <input type="text" id="lastname" name="last" size="40"/>
+                        </label>
+                        <br/>
+                        <label>
+                        Gender: <br/>
+                        <input type="radio" id="Male" name="Gender" checked/> Male  
+                        <input type="radio" id="Female" name="Gender"/> Female
+                        </label>
+                        <br/><br/>
+
+                        <label for="D.O.B.">
+                        D.O.B.:<br/>
+                        <input type="text" id="date" name="date" />
+                        </label>
+                        <br/><br/>
+                        <label>
+                        Address: <br/>
+                        <input type="text" id="address" name="address" size="40" /><br/>
+                        <input type="text" id="address" name="address" size="40" /><br/>
+                        <input type="text" id="address" name="address" size="40" />
+                        </label>
+                        <br/>
+                        <label>
+                        Postcode: <br/>
+                        <input type="text" id="postcode" name="postcode" size="10" maxlength="5" />
+                        </label>
+                        <br/>
+                        <label>
+                        E-mail: <br/>
+                        <input type="text" id="email" name="email" size="30" placeholder="someone@email.com"/>
+                        </label>
+                        <br/>
+                        <label>
+                        Contact: <br/>
+                        <input type="text" id="hp" name="hp" size="1" disabled value="+60"/>
+                        <input type="text" id="hp" name="hp" size="22"/>
+                        </label>
+                        <br/>
+                        <label>
+                        New Password:<br/>
+                        <input type="password" id="psw" name="psw" size="30"/>
+                        </label>
+                        <br/>
+                        <label>
+                        Confirmation of Password:<br/>
+                        <input type="password" id="epsw" name="epsw" size="30"/>
+                        </label>
+                        <br/><input type="checkbox" onclick="txt()">Show Password
+                        <br/>
+                        
+                    </fieldset>
+                    <br/>
+                    &nbsp;
+                    <input type="submit" value="Submit">
+                    &nbsp;
+                    <input type="reset" value="Reset"> 
+                    &nbsp;
+                   
+                </form>
+                
+            </div>
+            <br/>
+            <hr/>
+            <marquee behavior="scroll" direction="left" scrollamount="5">Welcome to COFFEE MASTER, we are here to provide you 
+                our best services and products. Contact 03-1633291 for any enquiries or seats reservation.</marquee>
+
+                <footer>
+                    <div class="foot">
+                        <address><u>Address:</u> <br/>ABZ-13, JALAN TARUC,<br/> TAMAN DESA PARK, <br/>57200, KUALA LUMPUR,<br/>WILAYAH PERSEKUTUAN. <br/> <u>Contact:</u> <br/>03-1633291</address>
+                    </div>
+        
+                    <div class="line"></div>
+        
+                    <div class="foot">
+                        <address><u>Business Hour:</u> <br/> (Weekday)<br/> 10.00AM-10.00PM <br/> 
+                        (Weekend) <br/> 10.00AM-8.00PM <br/> (Public Holiday)<br/> 12.00PM-8.00PM</address>
+                    </div>
+        
+                    <div class="clear"></div>
+                    <br/><br/>
+                    <div class="icon">
+                    <a href="https://www.facebook.com/Coffee-Master-100450081600378/?modal=admin_todo_tour"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/coffeemaster_html/?hl=en"><i class="fab fa-instagram-square"></i></a>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fas fa-envelope"></i>
+                    <a href="https://www.youtube.com/channel/UCwngLA_0Y1h_4_hrO6X8PMQ?fbclid=IwAR013bBP81CcEsHbo8dRCrrqn8OiPUbGOyajp7sLWVhq8mZ0Hp9UDQ_xzqk"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </footer>
+        </div>
+        
+        <script>
+
+            function check(){
+              
+                var p1= document.getElementById("psw");
+                var p2= document.getElementById("epsw");
+                var fname= document.getElementById("firstname");
+                var lname= document.getElementById("lastname");
+                var date= document.getElementById("date");
+                var addr= document.getElementById("address");
+                var post= document.getElementById("postcode");
+                var mail= document.getElementById("email");
+                var cont= document.getElementById("hp");
+
+                if(cont.value!="" && mail.value!="" && post.value!="" && fname.value!="" && lname.value!="" && date.value!="" && addr.value!="" && p1.value!="" && p2.value!=""){
+                    if(p1.value == p2.value){
+                        return true;
+                    }
+
+                }
+                alert("Please make sure that all the form are fill with appropriate value. "+"The password value should be same. ");
+                return false;
+            }
+            
+            function txt(){
+                var x = document.getElementById("psw");
+                var y = document.getElementById("epsw");
+                if (x.type == "password" || y.type == "password") {
+                    x.type = "text";
+                    y.type = "text";
+                } else {
+                    x.type = "password";
+                    y.type = "password";
+                }
+            }
+
+            
+        </script>
+
+    </body>
+</html>

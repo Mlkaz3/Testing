@@ -1,0 +1,141 @@
+<html>
+    <head>
+        <title>COFFEE MASTER</title>
+        <link rel="stylesheet" type="text/css" href="ass.css">
+        <script src="https://kit.fontawesome.com/843a5a592f.js" crossorigin="anonymous"></script>
+
+        <style>
+            .clear{
+                clear:both;
+            }
+        </style>
+    </head>
+    <body>
+        
+        <div class="background">
+            
+                
+                    <div class="center">
+                        <a href="ADraft.html"><img src="logo.jpeg" alt="Coffee Master Logo" class="logo"></a>
+                    </div>
+
+                    <nav>
+                        <a href="menu.htm">Menu</a> &nbsp;&nbsp;
+                        <a href="coffee.htm">Coffee</a>&nbsp;&nbsp;
+                        <a href="membership.htm">Membership</a> &nbsp;&nbsp;
+                        <a href="aboutus.htm">About Us</a> &nbsp;&nbsp;
+                        <a href="workshop.htm">Workshop</a>&nbsp;&nbsp;
+                    </nav>
+                    <br/>
+                    <hr/>
+
+                    <form>
+                        <input type="text" id="search" placeholder="  Searchbox">
+                        <input type="submit" id="but" value="Search">
+                    </form>
+
+                    <div id="imgslider">
+
+                        <div class="slide fade">
+                            <a href="menu.htm"><img src="https://images.pexels.com/photos/1002740/pexels-photo-1002740.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" width="100%" /></a>
+                            <div id="text">Enjoy our good vibes with a cup of coffee.</div>
+                        </div>
+                        
+                        <div class="slide fade">
+                            <a href="aboutus.htm"><img src="https://images.pexels.com/photos/2074130/pexels-photo-2074130.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" width="100%"/></a>
+                            <div id="text">Coffee Master is always the right choice.</div>
+                        </div>
+                        
+                        <div class="slide fade">
+                            <a href="membership.htm"><img src="https://images.pexels.com/photos/3944405/pexels-photo-3944405.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" width="100%" /></a>
+                            <div id="text">Join our membership today.</div>
+                        </div>
+            
+                        <div class="slide fade">
+                            <a href="workshop.htm"><img src="https://images.pexels.com/photos/302897/pexels-photo-302897.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" width="100%" /></a>
+                            <div id="text">Barista workshop is available now.</div>
+                        </div>
+            
+            
+                    </div>
+
+                    <script>
+                        var slideIndex=0;
+                        showSlides();
+            
+                        function showSlides(){
+                            var i;
+                            var slides = document.getElementsByClassName("slide");
+            
+                            for (i=0; i < slides.length; i++){
+                                slides[i].style.display = "none";
+                            }
+                            slideIndex++;
+                            if(slideIndex > slides.length){ slideIndex = 1}
+                            slides[slideIndex-1].style.display = "block";  
+            
+                            setTimeout(showSlides, 3500);
+                        }
+                    </script>
+                <br>
+                    
+
+                <br><br>
+                
+                
+                <div style = "margin-left: 30px;">
+                    <div style = "text-align: left;"><h3>Check out some pictures of the foods and drinks we made</h3></div>
+
+                    <img src = "https://www.littlesweetbaker.com/wp-content/uploads/2018/09/chocolate-souffle-2-1.jpg" style = "width: 300px;border-radius: 50%; height: 300px;float: left;">
+
+                    <img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTxxI7kK3V6j4xXrXM6XpJJ14u0wbqCFMtHxsESZxMNvZbUcm5v&usqp=CAU" style = "width: 300px; height: 300px;border-radius: 50%;float:left;">
+
+                    <img src = "https://i.hungrygowhere.com/cms/ab/da/30/e0/142994/eggs-benedict.jpg" style = "width: 300px; height: 300px;border-radius: 50%;float: left;">
+                    <div class = "clear"></div>
+                    <br><br><br>
+
+                    <div style = "text-align: left;"><h3>Finds out more about our foods and drinks .</h3></div>
+                    <div style = "text-align: left;"><h3>Click on the spaghetti photo to find out more about the main course we provide.Clicking on the cake and coffee and it will bring you to find out more about our dessert and coffee respectively</h3></div>
+                    <img src = "fooddrink.jpeg" alt = "image of food drink" usemap = "#fooddrink">
+
+                </div>
+
+                <map name = "fooddrink"> 
+                    <area  coords="333,643,258,666,204,714,189,743,189,796,222,866,327,931,411,948,551,939,669,886,723,812,727,749,627,665,498,627" shape="poly" href = "maincourse.htm">
+                    <area  coords="511,409,481,477,527,497,739,442,745,390,744,355,715,314,665,339,653,256,642,256,651,311,626,314,601,342,600,363" shape="poly" href = "dessert.htm">
+                    <area  coords="283,93,331,71,425,68,485,87,518,112,525,145,508,166,469,418,436,444,382,453,316,433,305,416,271,165,255,135,261,112" shape="poly" href = "coffee.htm">
+                </map>
+                
+                <hr/>
+                <marquee behavior="scroll" direction="left" scrollamount="5">Welcome to COFFEE MASTER, we are here to provide you 
+                    our best services and products. Contact 03-1633291 for any enquiries or seats reservation.</marquee>
+                <br/>
+            
+                <footer>
+                    <div class="foot">
+                        <address><u>Address:</u> <br/>ABZ-13, JALAN TARUC,<br/> TAMAN DESA PARK, <br/>57200, KUALA LUMPUR,<br/>WILAYAH PERSEKUTUAN. <br/> <u>Contact:</u> <br/>03-1633291</address>
+                    </div>
+        
+                    <div class="line"></div>
+        
+                    <div class="foot">
+                        <address><u>Business Hour:</u> <br/> (Weekday)<br/> 10.00AM-10.00PM <br/> 
+                        (Weekend) <br/> 10.00AM-8.00PM <br/> (Public Holiday)<br/> 12.00PM-8.00PM</address>
+                    </div>
+        
+                    <div class="clear"></div>
+                    <br/><br/>
+                    <div class="icon">
+                        <a href="https://www.facebook.com/Coffee-Master-100450081600378/?modal=admin_todo_tour"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/coffeemaster_html/?hl=en"><i class="fab fa-instagram-square"></i></a>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fas fa-envelope"></i>
+                        <a href="https://www.youtube.com/channel/UCwngLA_0Y1h_4_hrO6X8PMQ?fbclid=IwAR013bBP81CcEsHbo8dRCrrqn8OiPUbGOyajp7sLWVhq8mZ0Hp9UDQ_xzqk"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </footer>    
+        </div>
+
+        
+
+    </body>
+</html>

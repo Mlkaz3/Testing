@@ -1,0 +1,141 @@
+body{
+    margin:50px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 5%;
+    font-family: century gothic;
+    text-align: center;
+    background-image: url('a.jpeg');
+    background-size: 100%;
+}
+.background{
+    background-color: white;
+    background-size: auto;
+    opacity: 0.9;
+}
+
+.logo{
+    margin: 20px;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 30px;
+}
+
+.center,nav{
+    text-align: center;
+}
+
+nav a{
+    color:black;
+    padding:5px 20px;
+    border:1px solid white;
+    background-color: white;
+    text-decoration: none;
+    border-radius: 15px;
+}
+
+nav a:hover
+{
+    background-color: black;
+    color:white;
+}
+/*this is for search box*/
+form{
+    margin-left: 65%;
+}
+#search{
+    width: 200px;
+    height: 35px;
+    border-radius: 20px 0 0 20px;
+    outline: none;
+}
+#but{
+    margin-left: -5px;
+    outline: none;
+    cursor: pointer;
+    width: 80px;
+    height: 35px;
+    border-radius: 0 20px 20px 0;
+}
+footer{
+    height: 300px ;
+    margin-top: 10px;
+    padding: 20px;
+    text-align: left;
+    background: #404040;
+    color: white;
+}
+.foot{
+    float: left;
+    margin-left: 20px;
+}
+
+.line
+{
+    margin-left: 100px;
+    border: #B0B0B0 0.5px solid;
+    height: 150px;
+    float: left;
+}
+.clear{
+    clear: left;
+}
+.icon{
+    margin-left:20px ;
+    letter-spacing: 20px;
+    font-size: 50px;
+}
+.icon a{
+    color: white;
+}
+.icon a:hover{
+    color: saddlebrown;
+    
+}
+
+/*this is for search box*/
+
+
+/*this is for img slider*/
+            .slide{display: none;}
+            #imgslider{
+                background-color: grey;
+                border: 10px solid grey;
+                border-radius: 5px;
+                position: relative;
+                margin: auto;
+                max-width: 1000px;
+                opacity: unset;
+            }
+            #imgslider img{
+                height: 600px;
+            }
+            #text{
+                font-size: 25px;
+                bottom: 20px;
+                left: 20px;
+                position: absolute;
+                color: black;
+                background-color: white;
+                opacity: 0.7;
+                font-style: italic;
+
+            }
+            .fade{
+                -webkit-animation-name: fade;
+                -webkit-animation-duration: 1.5s;
+                animation-name: fade;
+                animation-duration: 1.5s;
+            }
+            @-webkit-keyframes fade {
+            from {opacity: .4} 
+            to {opacity: 1}
+            }
+            @keyframes fade {
+            from {opacity: .4} 
+            to {opacity: 1}
+            }
+
+            @media only screen and (max-width: 300px) {
+            .text {font-size: 11px}
+            }

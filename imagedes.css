@@ -1,0 +1,46 @@
+.imageleft{
+    float : left;
+    margin : 5px 5px 5px 20px;
+    border-radius: 10px;
+    width: 350px;
+    height : 300px;
+    
+}
+.imagedesleft{
+
+    float: left;
+    padding : 5px;
+    padding-bottom : 30px;
+    width : 650px ;
+    border-radius : 10px;
+    background-color : #006341;
+    margin : 5px 30px 5px 5px ;
+    border : 1px solid #006341;
+    opacity: 80% ;
+    color:white;
+}
+
+.imageright{
+
+    float : right;
+    margin : 5px 20px 5px 5px;
+    border-radius : 10px;
+    width : 350px;
+    height : 300px;
+
+}
+
+.imagedesright{
+
+    float : left ;
+    padding : 5px;
+    padding-bottom : 30px;
+    width : 650px;
+    border-radius : 10px;
+    background-color : #006341;
+    margin : 5px 5px 5px 30px;
+    border : 1px solid #006341;
+    opacity: 80% ;
+    color:white;
+
+}

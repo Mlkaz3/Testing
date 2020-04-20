@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <script src="https://kit.fontawesome.com/843a5a592f.js" crossorigin="anonymous"></script>
+        <style>
+            body{
+                margin:50px;
+                margin-left: 10%;
+                margin-right: 10%;
+                margin-bottom: 5%;
+                font-family: century gothic;
+                text-align: left;
+                background-image: url('a.jpeg');
+                background-size: 100%;
+            }
+            .background{
+                background-color: white;
+                opacity: 0.96;
+                background-size: auto;
+            }
+            .logo{
+                margin: 20px;
+                width: 150px;
+                height: 150px;
+                margin-bottom: 30px;
+            }
+            nav a{
+                color:black;
+                padding:5px 20px;
+                border:1px solid white;
+                background-color: white;
+                text-decoration: none;
+                border-radius: 15px;
+            }
+            nav a:hover
+            {
+                background-color: black;
+                color:white;
+            }
+            /*this is for search box*/
+            form{
+                margin-left: 65%;
+            }
+            #search{
+                width: 200px;
+                height: 35px;
+                border-radius: 20px 0 0 20px;
+                outline: none;
+            }
+            #but{
+                margin-left: -5px;
+                outline: none;
+                cursor: pointer;
+                width: 80px;
+                height: 35px;
+                border-radius: 0 20px 20px 0;
+            }
+            /*this is for search box*/
+            footer{
+                height: 300px ;
+                margin-top: 10px;
+                padding: 20px;
+                text-align: left;
+                background: #404040;
+                color: white;
+            }
+            .foot{
+                float: left;
+                margin-left: 20px;
+            }
+            
+            .line
+            {
+                margin-left: 100px;
+                border: #B0B0B0 0.5px solid;
+                height: 150px;
+                float: left;
+            }
+            .clear{
+                clear: left;
+            }
+            .icon{
+                margin-left:20px ;
+                letter-spacing: 20px;
+                font-size: 50px;
+            }
+            .icon a{
+                color: white;
+            }
+            .icon a:hover{
+                color: saddlebrown;
+                
+            }
+            th{
+                border: 3px solid black;
+                padding: 5px 3px 5px 3px;
+               
+            }
+            tr,td{
+                padding: 5px 3px 5px 3px;
+                border: 1px solid black;
+                border-collapse: collapse;
+                
+            }
+            table{
+                table-layout: fixed;
+                border: 1px solid black;
+                border-collapse: collapse;
+                
+                
+            }
+            .padding{
+                padding-left: 5%;
+            }
+            caption{
+                font-size: 25px;
+                padding: 5px;
+            }
+            .margin{
+                margin: 25px;
+            }
+            .red{
+                background-color: silver;
+            }
+            #blue{
+                background-color:dimgray ;
+            }
+            #purple{
+                background-color: black;
+                color: white;
+            }
+            /*shopping cart*/
+            .img img{
+                width: 400px;
+                height: 500px;
+                box-shadow:2px 2px 4px #000000;
+               
+            }
+            .img img:hover{
+                filter: grayscale(100%);
+               
+            }
+            .container{
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                margin-top: 50px;
+                padding-bottom: 50px;
+            }
+            .img{
+                margin-right: 20px;
+                margin-left: 20px;
+                position: relative;
+                overflow: hidden;
+            }
+            .img form{
+                margin-left: 0px;
+            }
+            .numbers{
+                background: none;
+                border: solid 1px grey;
+                padding: 5px;
+                border-radius: 5px;
+            }
+            .qty{
+                border-radius: 5px;
+            }
+            .checkout{
+                background: tomato;
+                border: 0px;
+                padding: 5px;
+                margin-left: 20px;
+                color: darkred;
+            }
+            .final form{
+                font-size: 25px;
+            }
+            .form-popup{
+                width:80%;
+                margin: 0px;
+                display: none;
+                position:fixed;
+                bottom: 0;
+                z-index: 9;
+            }
+            .form-container{
+                padding: 10px;
+                background-color: white;
+            }
+            .form-container input[type=text]{
+                width:75%;
+                padding: 15px;
+                margin:5px 0 5px 0;
+                border: none;
+                background: #f1f1f1;
+            }
+            .form-container .btn{
+                background-color:#404040;
+                color: white;
+                padding: 16px 26px;
+                border: none;
+                cursor: pointer;
+                width: 100%;
+                margin-bottom:10px;
+                opacity: 0.8;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="background">
+            
+                <div class="center" style = "text-align: center;">
+                    <a href="ADraft.html"><img src="logo.jpeg" alt="Coffee Master Logo" class="logo"></a>
+                
+
+                <nav>
+                    <a href="menu.htm">Menu</a> &nbsp;&nbsp;
+                    <a href="coffee.htm">Coffee</a> &nbsp;&nbsp;
+                    <a href="membership.htm">Membership</a> &nbsp;&nbsp;
+                    <a href="aboutus.htm">About Us</a> &nbsp;&nbsp;
+                    <a href="workshop.htm">Workshop</a>
+                </nav>
+
+                <br/>
+                <hr/>
+                
+                 </div>
+                
+                <div class="padding">
+                    <h3><u>COFFEE MASTER >> Workshop Timetable</u></h3>
+                    
+                </div>
+
+            <div class="margin">
+                <table style = "width: 100%;"> 
+                    <caption>Timetables of barista and pastry classes</caption>
+                <tr>
+                        <th></th>
+                        <th>10-11 (am)</th>
+                        <th>11-12(am-pm)</th>
+                        <th >12-1(pm)</th>
+                        <th >1-2(pm)</th>
+                        <th >2-3(pm)</th>
+                        <th >3-4(pm)</th>
+                        <th >4-5(pm)</th>
+                        <th >5-6(pm)</th>
+                        <th >6-7(pm)</th>
+                        <th >7-8(pm)</th>
+                        <th >8-9(pm)</th>
+                        <th >9-10(pm)</th>
+
+                    </tr>
+                    <tr>
+                        <th>Mon</th>
+                        <td class="red"></td>
+                        <td id="blue"></td>
+                        <td id="purple"></td>
+                        <td ></td>
+                        <td id="purple"></td>
+                        <td id="purple"></td>
+                        <td class="red"></td>
+                        <td class="red"></td>
+                        <td class="red"></td>
+                        <td id="blue"></td>
+                        <td id="blue" ></td>
+                        <td id="blue"></td>
+
+                    <tr>
+                        <th>Tue</th>
+                        <td id="purple"></td>
+                        <td id="purple"></td>
+                        <td id="blue"></td>
+                        <td ></td>
+                        <td class="red"></td>
+                        <td class="red"></td>
+                        <td id="purple"></td>
+                        <td id="blue"></td>
+                        <td class="red"></td>
+                        <td id="purple"></td>
+                        <td id="purple"></td>
+                        <td id="blue"></td>
+                    </tr>
+                    <tr>
+                        <th>Wed</th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>Thu</th>
+                        <td id="blue"></td>
+                        <td id="blue"></td>
+                        <td class="red"></td>
+                        <td></td>
+                        <td id="purple"></td>
+                        <td class="red"></td>
+                        <td id="blue"></td>
+                        <td class="red"></td>
+                        <td class="red"></td>
+                        <td id="purple"></td>
+                        <td id="blue"></td>
+                        <td id="blue"></td>
+                    </tr>
+                    <tr>
+                        <th>Fri</th>
+                        <td id="purple"></td>
+                        <td id="purple"></td>
+                        <td id="purple"></td>
+                        <td></td>
+                        <td class="red"></td>
+                        <td class="red"></td>
+                        <td id="blue"></td>
+                        <td id="blue"></td>
+                        <td class="red"></td>
+                        <td id="blue"></td>
+                        <td id="purple"></td>
+                        <td id="purple"></td>
+                    </tr>
+                    <tr>
+                        <th>Sat</th>
+                        <td class="red"></td>
+                        <td class="red"></td>
+                        <td class="red"></td>
+                        <td></td>
+                        <td id="blue"></td>
+                        <td id="blue"></td>
+                        <td class="red"></td>
+                        <td id="purple"></td>
+                        <td id="purple"></td>
+                        <td id="blue"></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>Sun</th>
+                        <td id="blue"></td>
+                        <td id="blue"></td>
+                        <td id="blue"></td>
+                        <td></td>
+                        <td id="purple"></td>
+                        <td id="purple"></td>
+                        <td class="red"></td>
+                        <td class="red"></td>
+                        <td class="red"></td>
+                        <td id="blue"></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+
+
+                        
+                </table>
+            
+                
+            <br>
+           
+
+            <table style = "table-layout: auto;margin: 2px;">
+                <tr>
+                   <th style = "margin-left: 50px;width : 50;" class="red">&nbsp;&nbsp;</th> 
+                   <td>Barista Workshop</td>
+                </tr>
+            </table>
+
+            <table style = "table-layout: auto;margin: 2px;">
+                <tr>
+                   <th style = "margin-left: 50px;width : 50;" id="blue">&nbsp;&nbsp;</th> 
+                   <td>Pastry Workshop</td>
+                </tr>
+            </table>
+
+            <table style = "table-layout: auto;margin: 2px;">
+                <tr>
+                   <th style = "margin-left: 50px;width : 50;" id="purple">&nbsp;&nbsp;</th> 
+                   <td>Both Workshop</td>
+                </tr>
+            </table>
+<br><br><br><br><br>
+            </div>
+  
+            <div class="container">
+                <div class="img">
+                    <img src="https://images.pexels.com/photos/302887/pexels-photo-302887.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260"/>
+                    <h3>Barista Workshop</h3>
+                    <h3>RM190.00</h3>
+                    <form name="p1">
+                        Quantity:
+                        <select name="qty" onchange="order_price1()" class="qty">
+                        <option>Selection</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        </select>
+                        <br><br>Subtotal:
+                        <input class="numbers" name="total1" disabled="disabled" value="RM0.00" size="10">
+
+                    </form>
+                </div>
+
+                <div class="img">
+                    <img src="https://images.pexels.com/photos/784633/pexels-photo-784633.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+                    <h3>Pastry Workshop</h3>
+                    <h3>RM190.00</h3>
+                    <form name="p2">
+                    Quantity:
+                    <select name="qty" onchange="order_price2()" class="qty">
+                        <option>Selection</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                    </select>
+                    <br><br>Subtotal:
+                    <input class="numbers" name="total2" disabled="disabled" value="RM0.00"  size="10">
+                    </form>
+                </div>
+                
+            </div>
+
+            <div class="final">
+                <form name="final">
+                TOTAL:
+                <input style="font-size: 15px;" class="numbers" name="total" value="RM0.00" disabled="disabled" size="10">
+                <button type="button" style="font-size: 15px;" class="checkout" onclick="checkform()">Checkout</button>
+                </form>
+            </div>
+           
+            <div class="form-popup" id="myForm">
+                <form class="form-container" onsubmit="msg()" action="menu.htm" name="formContainer">
+                    <h2>Checkout</h2>
+                    <fieldset>
+                        <legend>Personal Info</legend>
+                        Name: <br/>
+                        <input type="text" placeholder="Enter Name" name="name" required>
+                        <br/>Email: <br/>
+                        <input type="text" placeholder="Enter Email" name="email" required>
+                        <br/>Address:<br/>
+                        <input type="text" placeholder="Enter Address" name="address" required>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Payment Method</legend>
+                        <input type="radio" name="method">Visa
+                        <input type="radio" name="method">Paypal
+                        <input type="radio" name="method">Grab
+                        <input type="radio" name="method">Boost
+                        <br/><br/>Card Number: <br/>
+                        <input type="text" placeholder="Enter Card No." name="cn" required>
+                    </fieldset>
+
+                    <button type="submit" class="btn">ORDER</button>
+                    <button type="button" class="btn" onclick="closeForm()">Cancel</button>
+                </form>
+            </div>
+
+
+            <script>
+            function order_price1(){
+                qty = document.p1.qty.selectedIndex;
+                document.p1.total1.value = "RM" + eval(190.00*qty).toFixed(2) ;
+                total();
+            }
+            function order_price2(){
+                qty = document.p2.qty.selectedIndex;
+                document.p2.total2.value = "RM" + eval(190.00*qty).toFixed(2)  ;
+                total();
+            }
+            function total(){
+                t1 = parseFloat(document.p1.total1.value.replace("RM",""));
+                t2 = parseFloat(document.p2.total2.value.replace("RM",""));
+                sum = t1 + t2;
+                document.final.total.value = "RM" + sum.toFixed(2);
+            }
+            function checkform(){
+                    sum = parseFloat(document.final.total.value.replace("RM",""));
+                    form_ok= true;
+                    if(sum==0)form_ok=false;
+                    
+
+                    if(form_ok==true){
+                        openForm();
+                    }
+                    else{
+                        alert("Please select quantity before checking out.");
+                    }
+            }
+            function openForm(){
+                document.getElementById("myForm").style.display = "block";
+            }
+            function closeForm(){
+                document.getElementById("myForm").style.display = "none";
+            }
+            function msg(){
+                name = document.formContainer.name.value;
+                mail = document.formContainer.email.value;
+                add = document.formContainer.address.value;
+                amount = document.final.total.value;
+                pastryc = document.p2.qty.selectedIndex;
+                coffeec = document.p1.qty.selectedIndex;;
+                alert("Thanks for choosing Coffee Master! \nPurchasing Record \nName: "+name+"\nE-mail: "+mail+"\nAddress: "+add+
+                "\nClass Registered(Barista): "+coffeec+"\nClass Registered(Pastry): "+pastryc+"\nTotal Amount: "+amount);
+            }
+
+            </script>
+
+            
+            <br/>
+            <hr/>
+                <marquee behavior="scroll" direction="left" scrollamount="5">Welcome to COFFEE MASTER, we are here to provide you 
+                    our best services and products. Contact 03-1633291 for any enquiries or seats reservation.</marquee>
+                <br/>
+            
+            <footer>
+                <div class="foot">
+                    <address><u>Address:</u> <br/>ABZ-13, JALAN TARUC,<br/> TAMAN DESA PARK, <br/>57200, KUALA LUMPUR,<br/>WILAYAH PERSEKUTUAN. <br/> <u>Contact:</u> <br/>03-1633291</address>
+                </div>
+
+                <div class="line"></div>
+
+                <div class="foot">
+                    <address><u>Business Hour:</u> <br/> (Weekday)<br/> 10.00AM-10.00PM <br/> 
+                    (Weekend) <br/> 10.00AM-8.00PM <br/> (Public Holiday)<br/> 12.00PM-8.00PM</address>
+                </div>
+
+                <div class="clear"></div>
+                <br/><br/>
+                <div class="icon">
+                    <a href="https://www.facebook.com/Coffee-Master-100450081600378/?modal=admin_todo_tour"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/coffeemaster_html/?hl=en"><i class="fab fa-instagram-square"></i></a>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fas fa-envelope"></i>
+                    <a href="https://www.youtube.com/channel/UCwngLA_0Y1h_4_hrO6X8PMQ?fbclid=IwAR013bBP81CcEsHbo8dRCrrqn8OiPUbGOyajp7sLWVhq8mZ0Hp9UDQ_xzqk"><i class="fab fa-youtube"></i></a>
+                </div>
+            </footer>
+        </div>
+
+            
+        
+        
+
+        
+        
+        
+        
+    </body>
+</html>
